@@ -27,7 +27,7 @@ body {
 	height: 100%;
 	background-color: #2A8077;
 	position: absolute;
-	background: url('img/nest1.jpg') top center;
+	background: url('./img/nest1.jpg') top center;
 	background-size: cover;
 	transform: translateZ(-1px)scale(2.2);
 	margin-top: 400px;
