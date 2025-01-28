@@ -30,7 +30,7 @@ body {
 	background: url('./img/nest1.jpg') top center;
 	background-size: cover;
 	transform: translateZ(-1px)scale(2.2);
-	margin-top: 400px;
+	margin-top: 300px;
 }
 
 #container1 {
