@@ -2,8 +2,46 @@
 
 * {box-sizing: border-box;}
 
+html {
+	height: 100vh;
+	overflow: hidden;
+}
 
-/***NAVIGATION***/
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	background: white;
+	perspective: 1px;
+	transform-style: preserve-3d;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+
+/***FIRST SECTION***/
+
+#container1::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: #2A8077;
+	position: absolute;
+	background: url('img/nest1.jpg') top center;
+	background-size: cover;
+	transform: translateZ(-1px)scale(2.2);
+	margin-top: 400px;
+}
+
+#container1 {
+	margin: 0;
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+	transform-style: preserve-3d;
+	
+
+/***NAVIGATION SECTION***/
 
 .navbar {
 	text-align: center;	
@@ -25,7 +63,7 @@
 .navbar ul li a {
 	
 	text-align: center;	
-	color: black;
+	color: #fff;
 	text-decoration: none;
 	padding: 6px 16px;	
 }
@@ -33,7 +71,9 @@
 .navbar li a:hover {color: #5DCAA0;}
 
 
-/***BANNER***/
+/***BANNER SECTION***/
+
+#banner {}
 
 #banner h1 {
 	text-align: center;
@@ -46,7 +86,9 @@
 }
 
 
-/***SOCIALS***/
+/***SOCIAL SECTION***/
+
+.social {}
 
 .social ul {
 	font-size: 18px;
@@ -59,10 +101,11 @@
 .social ul li {
 	display: inline;
 	margin-right: 15px;
+	
 }
 
 .social ul li a {
-	color: black;
+	color: #fff;
 	text-decoration: none;
 	padding: 6px 16px;	
 }
@@ -70,7 +113,7 @@
 .social li a:hover {color: #5DCAA0;}
 
 
-/***INTRODUCTION SECTION***/
+/***INTRO SECTION***/
 
 .transparentBG {
 	margin-top: 60px;
@@ -81,6 +124,25 @@
 	background: rgba(0, 0, 0, 0.5);
 	padding-top: 50px;
 }
+
+.introSection1, 
+.introSection2 {
+	color: white;
+	border-left: rgba(9, 218, 136, 1) solid 2px;
+	width: 50%;
+	float: left;
+	margin: 0 0 20px 0;	
+	padding: 30px;
+	
+}
+.introSection1 h2,
+.introSection1 h3 {
+	margin-left: 150px;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: center;	
+}
+
 
 .introSection1 h2 {
 	letter-spacing: 10px;	
@@ -103,24 +165,8 @@
 	padding: 10px;
 }
 
-.introSection1 h2,
-.introSection1 h3 {
-	margin-left: 150px;
-	margin-top: 0;
-	margin-bottom: 0;
-	text-align: center;	
-}
 
-.introSection1, 
-.introSection2 {
-	color: white;
-	border-left: rgba(9, 218, 136, 1) solid 2px;
-	width: 50%;
-	float: left;
-	margin: 0 0 20px 0;	
-	padding: 30px;
-	
-}
+.introSection2 {}
 
 .introSection2 p {
 	font-size: 16px;
@@ -129,3 +175,4 @@
 	margin-right: 150px;
 	padding: 6px 40px;
 }
+
