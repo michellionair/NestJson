@@ -1,3 +1,4 @@
+
 /****MAIN****/
 
 * {box-sizing: border-box;}
@@ -176,3 +177,27 @@ body {
 	padding: 6px 40px;
 }
 
+
+/***ABOUT SECTION***/
+
+.about_info {
+	clear: both;
+	margin-left: 200px;
+	padding-top: 60px;
+	padding-bottom: 10px;
+}
+
+.about_info p {
+	margin-right: 200px;
+	clear: both;
+	text-align: center;
+	color: white;	
+}
+
+.about_img img {
+	margin: 20px;
+	float: left;
+	width: 200px;
+	height: 300px;
+}
+/*picture section*/
